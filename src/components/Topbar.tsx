@@ -112,19 +112,19 @@ export const Topbar = (): JSX.Element => {
               </Avatar>
             </button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-64 p-0" align="end">
-            <nav className="flex flex-col gap-[7px] bg-white">
+          <DropdownMenuContent className="w-56 p-0" align="end">
+            <nav className="flex flex-col gap-[6px] bg-white">
               <div className="flex flex-col">
-                <div className="flex items-center gap-3 px-3 py-2">
-                  <Avatar className="w-8 h-8">
+                <div className="flex items-center gap-2.5 px-2.5 py-1.5">
+                  <Avatar className="w-7 h-7">
                     <AvatarImage src="/acg8oclj3xcdooeofjefstr-jbo0vrq-awvwtezvxh9g2yhlrgvj5o83-s96-c.png" alt="Kirichat" />
                     <AvatarFallback>K</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col flex-1">
-                    <span className="[font-family:'Inter',Helvetica] font-medium text-neutral-900 text-[13.1px] leading-5">
+                    <span className="[font-family:'Inter',Helvetica] font-medium text-neutral-900 text-[11.5px] leading-[18px]">
                       Kirichat
                     </span>
-                    <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-500 text-[10.7px] leading-[15px]">
+                    <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-500 text-[9.5px] leading-[13px]">
                       Free
                     </span>
                   </div>
@@ -137,10 +137,10 @@ export const Topbar = (): JSX.Element => {
                     <Button
                       key={index}
                       variant="ghost"
-                      className="h-auto justify-start gap-3 px-3 py-2 rounded-md hover:bg-neutral-100"
+                      className="h-auto justify-start gap-2.5 px-2.5 py-1.5 rounded-md hover:bg-neutral-100"
                     >
-                      <item.icon className="w-4 h-4 text-neutral-700" />
-                      <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-700 text-[12.8px] leading-5">
+                      <item.icon className="w-3.5 h-3.5 text-neutral-700" />
+                      <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-700 text-[11.2px] leading-[18px]">
                         {item.label}
                       </span>
                     </Button>
@@ -148,8 +148,8 @@ export const Topbar = (): JSX.Element => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center px-3 py-1">
-                <span className="[font-family:'Inter',Helvetica] font-medium text-neutral-500 text-[10.9px] text-center leading-4">
+              <div className="flex items-center justify-center px-2.5 py-1">
+                <span className="[font-family:'Inter',Helvetica] font-medium text-neutral-500 text-[9.5px] text-center leading-[14px]">
                   Workspaces
                 </span>
               </div>
@@ -159,25 +159,25 @@ export const Topbar = (): JSX.Element => {
                   <Button
                     key={index}
                     variant="ghost"
-                    className={`h-auto justify-between px-3 py-2 mx-1 rounded-md ${
+                    className={`h-auto justify-between px-2.5 py-1.5 mx-1 rounded-md ${
                       workspace.isSelected ? "bg-[#e5e5e580]" : ""
                     }`}
                   >
-                    <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-900 text-[12.8px] leading-5">
+                    <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-900 text-[11.2px] leading-[18px]">
                       {workspace.name}
                     </span>
                     {workspace.isSelected && (
-                      <CheckIcon className="w-4 h-4 text-neutral-900" />
+                      <CheckIcon className="w-3.5 h-3.5 text-neutral-900" />
                     )}
                   </Button>
                 ))}
 
                 <Button
                   variant="ghost"
-                  className="h-auto justify-start gap-3 px-3 py-2 mx-1 rounded-md hover:bg-neutral-100"
+                  className="h-auto justify-start gap-2.5 px-2.5 py-1.5 mx-1 rounded-md hover:bg-neutral-100"
                 >
-                  <PlusIcon className="w-4 h-4 text-neutral-700" />
-                  <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-700 text-[12.7px] text-center leading-5">
+                  <PlusIcon className="w-3.5 h-3.5 text-neutral-700" />
+                  <span className="[font-family:'Inter',Helvetica] font-normal text-neutral-700 text-[11px] text-center leading-[18px]">
                     Create new workspace
                   </span>
                 </Button>
