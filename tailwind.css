@@ -1,0 +1,307 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --backgroundlightcelldefault: rgba(255, 255, 255, 1);
+  --backgroundlightcelldefaulthover: rgba(255, 255, 255, 1);
+  --bolder-font-family: "Inter", Helvetica;
+  --bolder-font-size: 14px;
+  --bolder-font-style: normal;
+  --bolder-font-weight: 500;
+  --bolder-letter-spacing: 0px;
+  --bolder-line-height: 20px;
+  --borderlightsecondary: rgba(228, 226, 228, 1);
+  --cellbackgroundcolor: rgba(255, 255, 255, 1);
+  --data-vizgraygray-30: rgba(198, 198, 198, 1);
+  --data-vizgraygray-50: rgba(141, 141, 141, 1);
+  --data-vizlimelime-40: rgba(120, 191, 57, 1);
+  --data-vizpinkpink-10: rgba(252, 240, 248, 1);
+  --data-vizpinkpink-70: rgba(150, 21, 116, 1);
+  --data-vizpurplepurple-60: rgba(143, 73, 222, 1);
+  --fontlightprimary: rgba(38, 37, 39, 1);
+  --fontlightsecondary: rgba(90, 93, 108, 1);
+  --label-font-family: "Inter", Helvetica;
+  --label-font-size: 12px;
+  --label-font-style: normal;
+  --label-font-weight: 400;
+  --label-letter-spacing: 0px;
+  --label-line-height: 20px;
+  --white: rgba(255, 255, 255, 1);
+  --www-chatbase-co-inter-bold-font-family: "Inter", Helvetica;
+  --www-chatbase-co-inter-bold-font-size: 30px;
+  --www-chatbase-co-inter-bold-font-style: normal;
+  --www-chatbase-co-inter-bold-font-weight: 700;
+  --www-chatbase-co-inter-bold-letter-spacing: 0px;
+  --www-chatbase-co-inter-bold-line-height: 36px;
+  --www-chatbase-co-inter-medium-font-family: "Inter", Helvetica;
+  --www-chatbase-co-inter-medium-font-size: 18px;
+  --www-chatbase-co-inter-medium-font-style: normal;
+  --www-chatbase-co-inter-medium-font-weight: 500;
+  --www-chatbase-co-inter-medium-letter-spacing: 0px;
+  --www-chatbase-co-inter-medium-line-height: 28px;
+  --www-chatbase-co-inter-regular-font-family: "Inter", Helvetica;
+  --www-chatbase-co-inter-regular-font-size: 14px;
+  --www-chatbase-co-inter-regular-font-style: normal;
+  --www-chatbase-co-inter-regular-font-weight: 400;
+  --www-chatbase-co-inter-regular-letter-spacing: 0px;
+  --www-chatbase-co-inter-regular-line-height: 20px;
+  --www-chatbase-co-inter-semi-bold-font-family: "Inter", Helvetica;
+  --www-chatbase-co-inter-semi-bold-font-size: 18px;
+  --www-chatbase-co-inter-semi-bold-font-style: normal;
+  --www-chatbase-co-inter-semi-bold-font-weight: 400;
+  --www-chatbase-co-inter-semi-bold-letter-spacing: -0.36000001430511475px;
+  --www-chatbase-co-inter-semi-bold-line-height: 18px;
+  --www-chatbase-co-inter-semi-bold-upper-font-family: "Inter", Helvetica;
+  --www-chatbase-co-inter-semi-bold-upper-font-size: 12px;
+  --www-chatbase-co-inter-semi-bold-upper-font-style: normal;
+  --www-chatbase-co-inter-semi-bold-upper-font-weight: 400;
+  --www-chatbase-co-inter-semi-bold-upper-letter-spacing: 0px;
+  --www-chatbase-co-inter-semi-bold-upper-line-height: 16px;
+  --www-chatbase-co-semantic-button-font-family: "Inter", Helvetica;
+  --www-chatbase-co-semantic-button-font-size: 14px;
+  --www-chatbase-co-semantic-button-font-style: normal;
+  --www-chatbase-co-semantic-button-font-weight: 500;
+  --www-chatbase-co-semantic-button-letter-spacing: 0px;
+  --www-chatbase-co-semantic-button-line-height: 20px;
+  --www-chatbase-co-semantic-heading-1-font-family: "Inter", Helvetica;
+  --www-chatbase-co-semantic-heading-1-font-size: 24px;
+  --www-chatbase-co-semantic-heading-1-font-style: normal;
+  --www-chatbase-co-semantic-heading-1-font-weight: 400;
+  --www-chatbase-co-semantic-heading-1-letter-spacing: -0.47999998927116394px;
+  --www-chatbase-co-semantic-heading-1-line-height: 32px;
+  --www-chatbase-co-semantic-input-font-family: "Inter", Helvetica;
+  --www-chatbase-co-semantic-input-font-size: 14px;
+  --www-chatbase-co-semantic-input-font-style: normal;
+  --www-chatbase-co-semantic-input-font-weight: 500;
+  --www-chatbase-co-semantic-input-letter-spacing: 0px;
+  --www-chatbase-co-semantic-input-line-height: normal;
+  --www-chatbase-co-semantic-label-font-family: "Inter", Helvetica;
+  --www-chatbase-co-semantic-label-font-size: 14px;
+  --www-chatbase-co-semantic-label-font-style: normal;
+  --www-chatbase-co-semantic-label-font-weight: 500;
+  --www-chatbase-co-semantic-label-letter-spacing: 0px;
+  --www-chatbase-co-semantic-label-line-height: 20px;
+  --www-chatbase-co-semantic-link-font-family: "Inter", Helvetica;
+  --www-chatbase-co-semantic-link-font-size: 16px;
+  --www-chatbase-co-semantic-link-font-style: normal;
+  --www-chatbase-co-semantic-link-font-weight: 500;
+  --www-chatbase-co-semantic-link-letter-spacing: 0px;
+  --www-chatbase-co-semantic-link-line-height: 20px;
+  --wwwchatbasecoalabaster: rgba(250, 250, 250, 1);
+  --wwwchatbasecoathens-gray: rgba(229, 231, 235, 1);
+  --wwwchatbasecoblack: rgba(0, 0, 0, 1);
+  --wwwchatbasecoblue-ribbon: rgba(21, 93, 252, 1);
+  --wwwchatbasecododger-blue: rgba(59, 130, 246, 1);
+  --wwwchatbasecoguardsman-red: rgba(193, 0, 7, 1);
+  --wwwchatbasecoiron: rgba(228, 228, 231, 1);
+  --wwwchatbasecoiron-50: rgba(228, 228, 231, 0.5);
+  --wwwchatbasecoportage: rgba(159, 126, 241, 1);
+  --wwwchatbasecoroyal-blue: rgba(37, 99, 235, 1);
+  --wwwchatbasecosantas-gray: rgba(161, 161, 170, 1);
+  --wwwchatbasecoscarpa-flow: rgba(82, 82, 92, 1);
+  --wwwchatbasecoshark: rgba(39, 39, 42, 1);
+  --wwwchatbasecospun-pearl: rgba(178, 174, 185, 1);
+  --wwwchatbasecostorm-gray: rgba(113, 113, 123, 1);
+  --wwwchatbasecostorm-gray-30: rgba(113, 113, 123, 0.3);
+  --wwwchatbasecowhite: rgba(255, 255, 255, 1);
+  --wwwchatbasecowhite-02: rgba(255, 255, 255, 0.0);
+  --wwwchatbasecowhite-white: rgba(255, 255, 255, 1);
+  --wwwchatbasecowoodsmoke: rgba(9, 9, 11, 1);
+  --wwwchatbasecoyour-pink: rgba(255, 201, 201, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
