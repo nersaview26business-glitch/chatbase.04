@@ -7,6 +7,14 @@ import {
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { Settings, LogOut } from "lucide-react";
 
 const navigationLinks = [
   { label: "Changelog", href: "https://www.chatbase.co/changelog" },
@@ -79,10 +87,45 @@ export const Topbar = (): JSX.Element => {
           className="h-4 bg-wwwchatbasecoscarpa-flow"
         />
 
-        <Avatar className="w-6 h-6">
-          <AvatarImage src="/acg8oclj3xcdooeofjefstr-jbo0vrq-awvwtezvxh9g2yhlrgvj5o83-s96-c.png" />
-          <AvatarFallback>HD</AvatarFallback>
-        </Avatar>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <button className="cursor-pointer outline-none">
+              <Avatar className="w-6 h-6">
+                <AvatarImage src="/acg8oclj3xcdooeofjefstr-jbo0vrq-awvwtezvxh9g2yhlrgvj5o83-s96-c.png" />
+                <AvatarFallback>HD</AvatarFallback>
+              </Avatar>
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56" align="end">
+            <div className="flex items-center gap-3 px-2 py-3">
+              <Avatar className="w-10 h-10">
+                <AvatarImage src="/acg8oclj3xcdooeofjefstr-jbo0vrq-awvwtezvxh9g2yhlrgvj5o83-s96-c.png" />
+                <AvatarFallback>HD</AvatarFallback>
+              </Avatar>
+              <div className="flex flex-col gap-0.5">
+                <span className="[font-family:'Inter',Helvetica] font-semibold text-sm text-wwwchatbasecowoodsmoke leading-tight">
+                  Habib Dwi K
+                </span>
+                <span className="[font-family:'Inter',Helvetica] font-normal text-xs text-wwwchatbasecostorm-gray leading-tight">
+                  habibdwik8@gmail.com
+                </span>
+              </div>
+            </div>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem className="cursor-pointer">
+              <Settings className="mr-2 h-4 w-4" />
+              <span className="[font-family:'Inter',Helvetica] font-medium text-sm">
+                Settings
+              </span>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              <LogOut className="mr-2 h-4 w-4" />
+              <span className="[font-family:'Inter',Helvetica] font-medium text-sm">
+                Logout
+              </span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   );
