@@ -6,7 +6,7 @@ export const ChatbaseAdaAgent = (): JSX.Element => {
   return (
     <div className="max-w-screen-2xl">
       <div className="flex items-center justify-between p-8">
-        <h1 className="font-www-chatbase-co-semantic-heading-1 font-[number:var(--www-chatbase-co-semantic-heading-1-font-weight)] text-wwwchatbasecowoodsmoke text-[length:var(--www-chatbase-co-semantic-heading-1-font-size)] tracking-[var(--www-chatbase-co-semantic-heading-1-letter-spacing)] leading-[var(--www-chatbase-co-semantic-heading-1-line-height)] [font-style:var(--www-chatbase-co-semantic-heading-1-font-style)]">
+        <h1 className="[font-family:'Inter',Helvetica] font-semibold text-wwwchatbasecowoodsmoke text-[32px] leading-[40px]">
           Agents
         </h1>
 
